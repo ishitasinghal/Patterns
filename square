@@ -27,24 +27,6 @@ Current Output
 
 CODE:
 
-n = int(input())
-pat(n)
-##for i in range(n+2):
-##    for j in range(n+2):
-##        if(i==0 or i ==n+1 or j==0 or j ==n+1):
-##            print(n, end=' ')
-##        else:
-##            print(n-1, end = ' ' )
-##    print()
-
-def square(a, size):
-    for i in range(size):
-        for j in rangw(size):
-            print(a[i][j], end = '')
-        print()
-
-
-
 def pat(n):   
     size = 2 * n - 1
 ##    front = 0
@@ -59,4 +41,17 @@ def pat(n):
         
         n = n-1
     square(a, size)
-  
+
+def square(a, size):
+    for i in range(size):
+        for j in rangw(size):
+            print(a[i][j], end = '')
+        print()
+
+n = int(input())
+pat(n)
+
+
+
+
+
