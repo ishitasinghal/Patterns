@@ -40,13 +40,17 @@ def pat(n):
     arr = [[0 for i in range(20)] for i in range(20)]
     while(n!= 0):
         for i in range(r, c+1): 
-            for j in range(r,c+2): 
+            for j in range(r,c+1): 
                 if (i==r or i ==c or j==r or j ==c): 
                     arr[i][j] = n
         r = r+1
         c=c-1
         n = n-1
-    square(arr, size)
+    square(arr, size);
 
 n = int(input())
 pat(n)
+
+
+
+
