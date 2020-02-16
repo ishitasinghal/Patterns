@@ -1,0 +1,26 @@
+Sample:
+
+3 3 3 3 3
+3 2 2 2 3
+3 2 1 2 3 
+3 2 2 2 3
+3 3 3 3 3
+
+CODE:
+
+n = int(input())
+for i in range(n+2):
+    for j in range(n+2):
+        if(i==0 or i ==n+1 or j==0 or j ==n+1):
+            print(n, end=' ')
+        else:
+            print(n-1, end = ' ' )
+    print()
+    
+Current Output
+
+3 3 3 3 3 
+3 2 2 2 3 
+3 2 2 2 3 
+3 2 2 2 3 
+3 3 3 3 3 
